@@ -11,6 +11,10 @@ import pandas as pd
 import random as rd
 # import matplotlib.pyplot as plt
 
+access_code = st.text_input('Please enter the access code:')
+if access_code != '1833':
+    st.write('Invalid access code. Try again or contact the administrator.')
+    st.stop()
 
 st.title('Seneca Trading Returns - 2021')
 
