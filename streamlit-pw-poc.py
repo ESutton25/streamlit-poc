@@ -9,7 +9,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import random as rd
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 
 st.title('Seneca Trading Returns - 2021')
@@ -24,11 +24,11 @@ d = pd.DataFrame(np.array([1,2,3,4,5,6,7,8,9,10,11,12]),
 d['Returns'] = returns
 
 
-plt.bar(d['Month'], d['Returns'], 
-        color = 'cadetblue', edgecolor = 'slategray', zorder=3)
-plt.ylabel('Return %')
-plt.xlabel('Month')
-plt.grid(zorder=0)
+# plt.bar(d['Month'], d['Returns'], 
+#         color = 'cadetblue', edgecolor = 'slategray', zorder=3)
+# plt.ylabel('Return %')
+# plt.xlabel('Month')
+# plt.grid(zorder=0)
 
 st.bar_chart(d.iloc[:, 1:2])
 st.table(d)
